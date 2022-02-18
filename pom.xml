@@ -17,9 +17,9 @@
     <distributionManagement>
         <repository>
             <uniqueVersion>false</uniqueVersion>
-            <id>demo</id>
+            <id>demo-01</id>
             <name>Demo Repository</name>
-            <url>scp://repo/maven2</url>
+            <url>file:///home/demo-01</url>
             <layout>default</layout>
         </repository>
     </distributionManagement>
