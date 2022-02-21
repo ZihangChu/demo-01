@@ -21,7 +21,7 @@
             <uniqueVersion>false</uniqueVersion>
             <id>demo-01</id>
             <name>Demo Repository</name>
-            <url>D:\myDemoRepository</url>
+            <url>file:///D:\myDemoRepository</url>
             <layout>default</layout>
         </repository>
     </distributionManagement>
