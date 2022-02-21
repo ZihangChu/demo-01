@@ -17,17 +17,12 @@
 
 
     <distributionManagement>
-<!--        <repository>-->
-<!--            <uniqueVersion>false</uniqueVersion>-->
-<!--            <id>demo-01</id>-->
-<!--            <name>Demo Repository</name>-->
-<!--            <url>file:///D:\myDemo</url>-->
-<!--            <layout>default</layout>-->
-<!--        </repository>-->
         <repository>
-            <id>github</id>
+            <uniqueVersion>false</uniqueVersion>
+            <id>demo-01</id>
             <name>Demo Repository</name>
-            <url>https://maven.pkg.github.com/ZihangChu/demo-01</url>
+            <url>file:///D:\myDemoRepository</url>
+            <layout>default</layout>
         </repository>
     </distributionManagement>
 
