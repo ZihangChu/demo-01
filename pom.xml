@@ -21,9 +21,29 @@
             <uniqueVersion>false</uniqueVersion>
             <id>demo-01</id>
             <name>Demo Repository</name>
-            <url>file:///D:\myDemoRepository</url>
+            <url>file:///D:\myDemo</url>
             <layout>default</layout>
         </repository>
     </distributionManagement>
 
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-jar-plugin</artifactId>
+                    <version>3.0.2</version>
+                    <configuration>
+                        <archive>
+                            <manifest>
+                                <addClasspath>true</addClasspath>
+                                <classpathPrefix>lib/</classpathPrefix>
+                                <mainClass>com.xuan.demo.TestApplication</mainClass>
+                            </manifest>
+                        </archive>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
 </project>
