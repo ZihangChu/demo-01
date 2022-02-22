@@ -38,11 +38,3 @@ jobs:
       run: mvn deploy
       env:
         GITHUB_TOKEN: ${{ github.token }}
-        
-    - name: Package
-      run: mkdir xuan && cp ./_output/local/bin/linux/amd64/kubeadm xuan
-
-    - uses: actions/upload-artifact@v1
-      with:
-        name: kubeadm-${{ env.packageName }}
-        path: xuan
