@@ -41,4 +41,9 @@ jobs:
         
     - name: docker build
       run: docker build  -t helloworld:latest .
+
+    - name: Install dependencies
+      run: |
+          docker login --username=${} --password=${}
+          docker push
       
