@@ -44,7 +44,7 @@ jobs:
 
     - name: Install dependencies
       run: |
-          docker login --username=${secrets.DOCKER_HUB_USERNAME} --password=${secrets.DOCKER_HUB_PASSWORD}
+          docker login -u ${secrets.DOCKER_HUB_USERNAME} -p ${secrets.DOCKER_HUB_PASSWORD}
           docker tag helloworld:latest zihangchu/helloworld:latest
           docker push zihangchu/helloworld:latest
       
