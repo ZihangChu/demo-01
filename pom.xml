@@ -89,8 +89,8 @@
 <!--                                <port>8080</port>-->
 <!--                            </ports>-->
                             <!--使用该参数将镜像的创建时间与系统时间对齐-->
-                            <!--<creationTime>USE_CURRENT_TIMESTAMP</creationTime>-->
-                            <useCurrentTimestamp>true</useCurrentTimestamp>
+                            <creationTime>USE_CURRENT_TIMESTAMP</creationTime>
+                            <!--<useCurrentTimestamp>true</useCurrentTimestamp>-->
                         </container>
                     </configuration>
                 </plugin>
