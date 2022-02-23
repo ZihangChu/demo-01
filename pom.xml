@@ -77,18 +77,19 @@
                             <image>zihangchu/hello:latest</image>
                         </to>
                         <!--容器相关的属性-->
-<!--                        <container>-->
-<!--                            &lt;!&ndash;jvm内存参数&ndash;&gt;-->
-<!--                            <jvmFlags>-->
-<!--                                <jvmFlag>-Xms4g</jvmFlag>-->
-<!--                                <jvmFlag>-Xmx4g</jvmFlag>-->
-<!--                            </jvmFlags>-->
-<!--                            &lt;!&ndash;要暴露的端口&ndash;&gt;-->
+                        <container>
+                            <!--jvm内存参数-->
+                            <jvmFlags>
+                                <!--             时区                   -->
+                                <jvmFlag>-Duser.timezone=Asia/Shanghai</jvmFlag>
+                                <jvmFlag>-Xmx4g</jvmFlag>
+                            </jvmFlags>
+                            <!--要暴露的端口-->
 <!--                            <ports>-->
 <!--                                <port>8080</port>-->
 <!--                            </ports>-->
 <!--                            <creationTime>USE_CURRENT_TIMESTAMP</creationTime>-->
-<!--                        </container>-->
+                        </container>
                     </configuration>
                 </plugin>
             </plugins>
