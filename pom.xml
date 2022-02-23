@@ -80,7 +80,7 @@
                         <container>
                             <!--jvm内存参数-->
                             <jvmFlags>
-                                <!--             时区                   -->
+                                <!--时区-->
                                 <jvmFlag>-Duser.timezone=Asia/Shanghai</jvmFlag>
                                 <jvmFlag>-Xmx4g</jvmFlag>
                             </jvmFlags>
@@ -88,7 +88,9 @@
 <!--                            <ports>-->
 <!--                                <port>8080</port>-->
 <!--                            </ports>-->
-<!--                            <creationTime>USE_CURRENT_TIMESTAMP</creationTime>-->
+                            <!--使用该参数将镜像的创建时间与系统时间对齐-->
+                            <!--<creationTime>USE_CURRENT_TIMESTAMP</creationTime>-->
+                            <useCurrentTimestamp>true</useCurrentTimestamp>
                         </container>
                     </configuration>
                 </plugin>
