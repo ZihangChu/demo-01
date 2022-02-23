@@ -49,6 +49,7 @@ jobs:
 #          docker tag helloworld:latest zihangchu/helloworld:latest
 #          docker push zihangchu/helloworld:latest
 
-    -name: Docker Build
+    - name: Build Docker
       run: mvn compile jib:build -Djib.to.auth.username=${{ secrets.DOCKER_HUB_USERNAME }} -Djib.to.auth.password=${{ secrets.DOCKER_HUB_PASSWORD }}
+
       
